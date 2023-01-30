@@ -46,10 +46,11 @@ public class CPersona {
         return "La persona fue borrada exitosamente";
     }
     
-    @PutMapping ("editar/{id}")
+    @PutMapping ("/editar/{id}")
     public void editarPersona(@RequestBody Persona pers){
     persoServicio.editarPersona(pers);
     }
+   
     
     
 }

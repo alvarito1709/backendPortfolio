@@ -16,8 +16,6 @@ public class Proyecto {
     
     private String url;
     
-    private String imagen;
-    
     private String descripcion;
 
     public Proyecto() {
@@ -27,7 +25,6 @@ public class Proyecto {
         this.id = id;
         this.nombre = nombre;
         this.url = url;
-        this.imagen = imagen;
         this.descripcion = descripcion;
     }
 
@@ -43,9 +40,7 @@ public class Proyecto {
         return url;
     }
 
-    public String getImagen() {
-        return imagen;
-    }
+ 
 
     public String getDescripcion() {
         return descripcion;
@@ -63,9 +58,6 @@ public class Proyecto {
         this.url = url;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
-    }
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
