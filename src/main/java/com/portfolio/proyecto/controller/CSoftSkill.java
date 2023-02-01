@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("soft")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfolio-alvaro.web.app/")
 public class CSoftSkill {
     @Autowired
     SSoftSkill skill;
