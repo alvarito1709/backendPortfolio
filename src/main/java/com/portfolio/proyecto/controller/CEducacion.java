@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("educacion")
-@CrossOrigin(origins = "https://portfolio-alvaro.web.app/")
+@CrossOrigin(origins = "https://portfolio-alvaro.web.app")
 public class CEducacion {
     @Autowired
     SEducacion educacion;
@@ -45,7 +45,7 @@ public class CEducacion {
         return "Apartado educacion borrado exitosamente";
     }
     
-    @PutMapping ("editar/{id}")
+    @PutMapping ("/editar/{id}")
     public void editarEducacion(@RequestBody Educacion edu){
     educacion.editarEducacion(edu);
     }

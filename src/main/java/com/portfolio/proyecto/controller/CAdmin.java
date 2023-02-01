@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("admin")
-@CrossOrigin(origins = "https://portfolio-alvaro.web.app/")
+@CrossOrigin(origins = "https://portfolio-alvaro.web.app")
 public class CAdmin {
     @Autowired
     SAdmin admin;
@@ -46,7 +46,7 @@ public class CAdmin {
         return "El usuario fue borrado exitosamente";
     }
     
-    @PutMapping ("editar/{id}")
+    @PutMapping ("/editar/{id}")
     public void editarAdmin(@RequestBody Admin adm){
     admin.editarAdmin(adm);
     }

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("hardskill")
-@CrossOrigin(origins = "https://portfolio-alvaro.web.app/")
+@CrossOrigin(origins = "https://portfolio-alvaro.web.app")
 public class CHardSkill {
     @Autowired
     SHardSkill hard;
@@ -45,7 +45,7 @@ public class CHardSkill {
         return "Apartado de habilidad borrado exitosamente";
     }
     
-    @PutMapping ("editar/{id}")
+    @PutMapping ("/editar/{id}")
     public void editarSkill(@RequestBody HardSkill exp){
     hard.editarSkill(exp);
     }
