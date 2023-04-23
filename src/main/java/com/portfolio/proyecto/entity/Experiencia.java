@@ -27,15 +27,18 @@ public class Experiencia {
     private String imagen;
     
     private String link;
+    
+    private String responsabilidades;
 
    
-    public Experiencia(String titulo, String descripcion, Date periodoComienzo, Date periodoFinal, String imagen, String link) {
+    public Experiencia(String titulo, String descripcion, Date periodoComienzo, Date periodoFinal, String imagen, String link, String responsabilidades) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.periodoComienzo = periodoComienzo;
         this.periodoFinal = periodoFinal;
         this.imagen = imagen;
         this.link = link;
+        this.responsabilidades = responsabilidades;
     }
 
     public Experiencia() {
@@ -69,6 +72,11 @@ public class Experiencia {
         return link;
     }
 
+    public String getResponsabilidades() {
+        return responsabilidades;
+    }
+    
+
     public void setId(int id) {
         this.id = id;
     }
@@ -95,6 +103,10 @@ public class Experiencia {
 
     public void setLink(String link) {
         this.link = link;
+    }
+
+    public void setResponsabilidades(String responsabilidades) {
+        this.responsabilidades = responsabilidades;
     }
     
     

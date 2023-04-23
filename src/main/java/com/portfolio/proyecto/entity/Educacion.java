@@ -28,11 +28,13 @@ public class Educacion {
      private String imagen;
      
      private String link;
+     
+     private String contenido;
 
     public Educacion() {
     }
 
-    public Educacion(int id, String descripcion, String tituloObtenido, Date periodoComienzo, Date periodoFinal, String imagen, String link) {
+    public Educacion(int id, String descripcion, String tituloObtenido, Date periodoComienzo, Date periodoFinal, String imagen, String link, String contenido) {
         this.id = id;
         this.descripcion = descripcion;
         this.tituloObtenido = tituloObtenido;
@@ -40,6 +42,7 @@ public class Educacion {
         this.periodoFinal = periodoFinal;
         this.imagen = imagen;
         this.link = link;
+        this.contenido = contenido;
     }
 
     public int getId() {
@@ -72,6 +75,11 @@ public class Educacion {
         return link;
     }
 
+    public String getContenido() {
+        return contenido;
+    }
+    
+
     public void setId(int id) {
         this.id = id;
     }
@@ -100,6 +108,10 @@ public class Educacion {
 
     public void setLink(String link) {
         this.link = link;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
     }
     
     
